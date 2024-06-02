@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Wallet</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Smart Wallet</h1>
+
+    <div class="section">
+      <h2>Add Funds</h2>
+      <input type="number" id="amount" placeholder="Amount" />
+      <button onclick="addFunds()">Add Funds</button>
+    </div>
+
+    <div class="section">
+      <h2>Split Bill</h2>
+      <input type="number" id="billAmount" placeholder="Bill Amount" />
+      <input type="number" id="numPeople" placeholder="Number of People" />
+      <button onclick="splitBill()">Split Bill</button>
+    </div>
+
+    <div class="section">
+      <h2>Wallet Balance</h2>
+      <div id="balance">$0</div>
+    </div>
+
+    <div class="section">
+      <h2>Contributions</h2>
+      <canvas id="contributionsChart" width="400" height="200"></canvas>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
